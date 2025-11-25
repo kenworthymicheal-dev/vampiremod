@@ -16,10 +16,7 @@ public class iteminit {
    public static final RegistryObject<Item> vampire_gem = Item.register("vampire gem_item", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 
-
-
-
-    public static final RegistryObject<Item> vampire_madalion = Item.register("vampire_medallion", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> vampire_madalloin = Item.register("vampire_medallion", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 
 
