@@ -7,7 +7,7 @@
       "minecraft:string"
     ]
   },
-  "pattern": [
+  "pattern": [=
     "X X",
     " v"
   ],
