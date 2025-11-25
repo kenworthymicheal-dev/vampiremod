@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "minecraft:gold_ingot",
+    "v": [
+      "minecraft:string"
+    ]
+  },
+  "pattern": [
+    "X X",
+    " v"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vampiremod:gold_chain"
+  }
+}

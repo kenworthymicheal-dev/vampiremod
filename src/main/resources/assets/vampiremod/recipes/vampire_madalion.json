@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "v": [
+      "vampiremod:items/gold_chain"
+    ],
+    "f": [
+      "vampiremod:items/vampire_gem"
+    ]
+  },
+  "pattern": [
+    " v",
+    " f"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vampiremod:gold_chain"
+  }
+}
