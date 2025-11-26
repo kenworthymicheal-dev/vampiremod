@@ -13,7 +13,7 @@ public record ModArmormaterials<ingredient>(String name, int duribility, int[] p
    private static final int[] DURABILITY_PER_SLOT = new int[]{13, 15, 16, 11};
     @Override
     public int getDurabilityForSlot(@NotNull EquipmentSlot slot) {
-        return 0;
+        return DURABILITY_PER_SLOT[slot.getIndex()];
     }
 
     @Override

@@ -7,12 +7,11 @@
       "minecraft:string"
     ]
   },
-  "pattern": [=
+  "pattern": [
     "X X",
     " v"
   ],
   "result": {
-    "count": 1,
     "id": "vampiremod:gold_chain"
   }
 }
