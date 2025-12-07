@@ -32,6 +32,7 @@ public class vampiremod
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         iteminit.Item.register(bus);
+        BLOCKS.register(bus);
 
 
 
