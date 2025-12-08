@@ -1,7 +1,16 @@
 package net.micheal.vampiremod.event;
 
-import com.mojang.datafixers.types.templates.List;
+import com.mojang.blaze3d.vertex.PoseStack;
+
+import net.micheal.vampiremod.base.SpendPointPacket;
+import net.micheal.vampiremod.vampiremod;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.entity.player.Inventory;
+
+import java.util.List;
 
 public class vampireplayer {
 
@@ -28,9 +37,14 @@ public class vampireplayer {
                         Component.literal((VampireData.hasAbility(mc.player, id) ? "[UNLOCKED] " : "") + id),
                         btn -> {
                             // send packet to server to spend point for this ability
-                            VampirismMod.CHANNEL.sendToServer(new SpendPointPacket(id));
+                            vampiremod.MOD_ID.CHANNEL.sendToServer(new SpendPointPacket(id));
                         }));
             }
+        }
+
+        @Override
+        protected void renderBg(PoseStack p_97787_, float p_97788_, int p_97789_, int p_97790_) {
+
         }
 
         @Override
@@ -47,13 +61,8 @@ public class vampireplayer {
             drawString(poseStack, this.font, "Ability Points: " + pts, leftPos + 10, topPos + 150, 0xFF3333);
         }
 
-        @Override
-        protected void renderBg(PoseStack poseStack, float v, int i, int j) {
-            // no textured background provided - fill with a dark rectangle if desired (left out for brevity)
-        }
-    }
 
-
+2
 
 
 

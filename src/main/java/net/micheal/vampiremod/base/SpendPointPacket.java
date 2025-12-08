@@ -1,5 +1,5 @@
 package net.micheal.vampiremod.base;
-import net.micheal.vampiremod.event;
+
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkEvent;

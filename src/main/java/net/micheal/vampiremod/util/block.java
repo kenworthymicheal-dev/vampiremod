@@ -20,7 +20,7 @@ public class  block {
     private static final double XP_PER_VIAL = 20.0;
 
 
-    public VampireAltarBlock(Properties properties) {
+    public void VampireAltarBlock(Properties properties) {
         super(properties);
     }
 
@@ -101,14 +101,3 @@ public class  block {
 
     }
 
-    // Optional: prevent placement side-effects (not required)
-    @Override
-    public void neighborChanged(BlockState state, Level worldIn, BlockPos pos, BlockPos neighborPos, BlockState neighborState, boolean isMoving) {
-        super.neighborChanged(state, worldIn, pos, neighborPos, neighborState, isMoving);
-    }
-
-
-
-
-
-}

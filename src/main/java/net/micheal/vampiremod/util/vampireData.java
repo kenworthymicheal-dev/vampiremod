@@ -2,8 +2,13 @@ package net.micheal.vampiremod.util;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.ComponentContents;
+import net.minecraft.network.chat.Style;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.util.FormattedCharSequence;
 import net.minecraft.world.entity.player.Player;
+
+import java.util.List;
 
 public class vampireData {
     private static final String TAG_ROOT = "vampirism";
@@ -74,3 +79,25 @@ public class vampireData {
 }
 
     private static class TextComponent implements Component {
+
+        @Override
+        public Style getStyle() {
+            return null;
+        }
+
+        @Override
+        public ComponentContents getContents() {
+            return null;
+        }
+
+        @Override
+        public List<Component> getSiblings() {
+            return List.of();
+        }
+
+        @Override
+        public FormattedCharSequence getVisualOrderText() {
+            return null;
+        }
+    }
+}
