@@ -8,6 +8,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import net.micheal.vampiremod.event.playerEvents;
+import net.micheal.vampiremod.event.commonEvents;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(vampiremod.MOD_ID)
@@ -15,8 +17,7 @@ public class vampiremod
 {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "vampire_mod";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+;
 
 
     public vampiremod()
@@ -32,7 +33,10 @@ public class vampiremod
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         iteminit.Item.register(bus);
-        BLOCKS.register(bus);
+
+
+        MinecraftForge.EVENT_BUS.register(new CommonEvents());
+        MinecraftForge.EVENT_BUS.register(new PlayerEvents());
 
 
 
