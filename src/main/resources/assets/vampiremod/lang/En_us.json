@@ -1,0 +1,42 @@
+{
+  "_comment": "===== ITEMS =====",
+
+  "item.vampiremod.gold_chain": "Gold Chain",
+  "item.vampiremod.vampire_medallion": "Vampire Medallion",
+  "item.vampiremod.vampire_gem": "Vampire Gem",
+
+  "_comment2": "===== BLOCKS =====",
+
+  "block.vampiremod.vampire_altar": "Vampire Altar",
+
+  "_comment3": "===== MENUS & SCREENS =====",
+
+  "menu.vampiremod.ability_menu": "Vampire Abilities",
+  "menu.vampiremod.altar_menu": "Vampire Altar",
+
+  "_comment4": "===== KEYBINDINGS =====",
+
+  "key.vampiremod.blood_suck": "Blood Suck",
+  "key.vampiremod.open_ability_menu": "Open Vampire Ability Menu",
+
+  "key.categories.vampiremod": "Vampire Mod",
+
+  "_comment5": "===== CAPABILITY TEXT =====",
+
+  "message.vampiremod.already_vampire": "You are already a vampire.",
+  "message.vampiremod.vampire_awaken": "You feel darkness awaken within you...",
+  "message.vampiremod.not_vampire": "You feel nothing.",
+  "message.vampiremod.need_blood": "You need %s blood.",
+  "message.vampiremod.level_up": "You feel your vampire power grow...",
+  "message.vampiremod.max_level": "You already reached max level!",
+
+  "_comment6": "===== ABILITY NAMES =====",
+
+  "ability.vampiremod.ability_0": "Night Vision",
+  "ability.vampiremod.ability_1": "Blood Sense",
+  "ability.vampiremod.ability_2": "Dark Ascension",
+
+  "_comment7": "===== ENTITIES =====",
+
+  "entity.vampiremod.small_vampire": "Small Vampire"
+}

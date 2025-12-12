@@ -1,5 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "Textures": {
-  "layer0": "vampiremod:items/vampire_gem"
-}
